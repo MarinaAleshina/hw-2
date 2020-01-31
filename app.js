@@ -137,26 +137,24 @@
 
 // console.log(newArray.join(''));
 
-// function doubleArray(newArr) {
-//   console.log(newArr);
-//   return newArr;
-// }
-
-// let newArr = doubleArray([1, 2, 3]);
-// let doubleArr = [...newArr, 1, 2, 3];
-// console.log(doubleArr);
-
-function changeCollection() {
-  let array = [];
-  for (let i = 0; i < array.length; i++) {
-    array[i].shift();
-  }
+function doubleArray(newArr) {
+  return newArr.concat(newArr);
 }
 
-let a = [1, 2, 3, 4];
-let b = ["a", "b", "c"];
-let c = ["hello", "world"];
+let newArr = [1, 2, 3];
+console.log(doubleArray(newArr));
 
-changeCollection(a, b, c);
+// function changeCollection(newArr, a, b, c) {
+//   let array = [];
+//   for (let i = 0; i < newArr.length; i++) {
+//     array.shift(newArr[i]);
+//   }
+// }
 
-console.log(a, b, c);
+// let a = [1, 2, 3, 4];
+// let b = ["a", "b", "c"];
+// let c = ["hello", "world"];
+
+// changeCollection(newArr, a, b, c);
+
+// console.log(a, b, c);
